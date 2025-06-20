@@ -69,20 +69,6 @@ system_responses = system_pattern.findall(plan)
 qa_pairs = qa_pattern.findall(plan)
 raw_blocks = re.split(r'システム\(発話\d+\):', plan)[1:]
 
-# ここから追加
-print("\n--- plan ---")
-print(plan)
-
-print("\n--- system_responses ---")
-print(system_responses)
-
-print("\n--- qa_pairs ---")
-print(qa_pairs)
-
-print("\n--- raw_blocks ---")
-for i, block in enumerate(raw_blocks):
-    print(f"raw_blocks[{i}]:\n{block}\n")
-
 # 発話ごとのQAを格納するリスト
 dialogue_plan = []
 
