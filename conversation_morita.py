@@ -104,11 +104,6 @@ for block in raw_blocks:
         "qa_pairs": qa_pairs
     })
 
-# デバッグ用：dialogue_planの内容を表示
-print("\n--- dialogue_plan ---")
-for i, d in enumerate(dialogue_plan):
-    print(f"dialogue_plan[{i}]: {d}")
-
 # 類似度計算関数
 def calculate_similarity(user_question, plan_question):
     """ユーザ質問と計画質問の類似度（0~1）を計算"""
